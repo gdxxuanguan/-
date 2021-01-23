@@ -9,13 +9,13 @@ import xlwt
 from io import BytesIO
 import gzip
 def bvtocomment(BV,MainReplyNum,time):
-    # workbook = xlwt.Workbook(encoding='utf-8')
-    # worksheet = workbook.add_sheet('B站评论')
-    # worksheet.write(0, 0, '评论')
+    workbook = xlwt.Workbook(encoding='utf-8')
+    worksheet = workbook.add_sheet('B站评论')
+    worksheet.write(0, 0, '评论')
 
-    # wangzhi="https://www.bilibili.com/video/BV12E411A7ZQ?p=23"
-    # wangzhi1=wangzhi.split('BV')
-    # BV="BV"+wangzhi1[1].split('?')[0]
+    wangzhi="https://www.bilibili.com/video/BV12E411A7ZQ?p=23"
+    wangzhi1=wangzhi.split('BV')
+    BV="BV"+wangzhi1[1].split('?')[0]
 
 
     for x in range (1,2):
